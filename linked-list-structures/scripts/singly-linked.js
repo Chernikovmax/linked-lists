@@ -18,7 +18,7 @@ class LinkedList {
 
   _addSingleAtIndex(i, value) {
     if (this.length === 0  && i !== 0) {
-      alert(`You have entered an index "${i}", but this list is empty, therefore, the value you entered will be added to the top of the list.`)
+      alert(`You have entered an index "${i}", but this list is empty, therefore, the value you entered will be added to the top of the list.`);
       return this._addSingleItemToHead(value);
     }
 
@@ -45,7 +45,7 @@ class LinkedList {
 
   addValueAtIndex(i, ...values) {
     if (this.length === 0 && i !== 0) {
-      alert(`You have entered an index "${i}", but this list is empty, therefore, the values you entered will be added to the top of the list.`)
+      alert(`You have entered an index "${i}", but this list is empty, therefore, the values you entered will be added to the top of the list.`);
       return values.forEach(value => this._addSingleItemToHead(value));
     }
 
@@ -127,7 +127,7 @@ class LinkedList {
         return undefined;
     }
 
-    return values.forEach((val) => this._remove(val))
+    return values.forEach((val) => this._remove(val));
   }
 
   _removeFromIndex(i) {
@@ -166,7 +166,7 @@ class LinkedList {
 
     if (n > this.length - i) {
       return alert(`You want to delete "${n}" element(s), but there is (are) only ${this.length-i} element(s), after element №${i} element(s)!\n
-      Please, enter a valid value. `)
+      Please, enter a valid value. `);
     }
 
     let counter = i;

@@ -189,7 +189,7 @@ class DoublyLinkedList {
     let prev = null;
 
     while (current) {
-      let next = current.next
+      let next = current.next;
       current.next = prev;
       current.prev = next;
       prev = current;
@@ -254,7 +254,7 @@ class DoublyLinkedList {
     }
     return this;
   }
-  findPosition(value) {
+  findValue(value) {
     let current = this.head;
     let counter = 0;
 
@@ -262,10 +262,10 @@ class DoublyLinkedList {
       if (current.value === value) {
        return console.log(counter);
       }
-      current = current.next
-      counter++
+      current = current.next;
+      counter++;
     }
-    return console.log("There is no such value!");;
+    return console.log("There is no such value!");
   }
   findPosition(position) {
     let current = this.head;
@@ -279,10 +279,10 @@ class DoublyLinkedList {
       if (counter === position) {
        return console.log(current.value);
       }
-      current = current.next
-      counter++
+      current = current.next;
+      counter++;
     }
-    return console.error("There is no a node at this position!");;
+    return console.error("There is no a node at this position!");
   }
 }
 
