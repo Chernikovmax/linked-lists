@@ -9,25 +9,25 @@
 
 <div class="main-wrapper">
   <h1 class="main-title">Add a new student's info here</h1>
-  <section class="subwrapper">
+  <div class="subwrapper">
     <form class="register-student">
-      <section class="register-student__form-field">
+      <label class="register-student__form-field">
         <span class="title">Last Name</span>
         <input required autofocus class="input-info" type="text" name="last-name" placeholder="Ivanov" maxlength="30">
-      </section>
-      <section class="register-student__form-field">
+      </label>
+      <label class="register-student__form-field">
         <span class="title">First Name</span>
         <input required class="input-info" type="text" name="first-name" placeholder="Ivan" maxlength="15">
-      </section>
-      <section class="register-student__form-field">
+      </label>
+      <label class="register-student__form-field">
         <span class="title">Patronymic</span>
         <input required class="input-info" type="text" name="patronymic" placeholder="Ivanovich" maxlength="15">
-      </section>
-      <section class="register-student__form-field">
+      </label>
+      <label class="register-student__form-field">
         <label for="birthday" class="title">Birthday</label>
         <input required class="input-info" id="birthday" type="date" name="birthday" maxlength="8"  min="1940-01-01" max="2005-31-12">
-      </section>
-      <section class="register-student__form-field">
+      </label>
+      <label class="register-student__form-field">
         <span class="title">Cource of study</span>
         <select class="select-value" name="course-of-study">
           <option selected value="1">1</option>
@@ -36,13 +36,13 @@
           <option value="4">4</option>
           <option value="5">5</option>
         </select>
-      </section>
-      <section class="register-student__form-field">
+      </label>
+      <label class="register-student__form-field">
         <span class="title">Group number</span>
         <input required class="input-info" type="text" name="group-number" placeholder="ISA-123" maxlength="10">
-      </section>
+      </label>
       <hr class="line">
-      <section class="register-student__form-field subjects-wrapper">
+      <label class="register-student__form-field subjects-wrapper">
         <span class="title subject-title">English</span>
         <select class="select-value" name="english">
           <option selected value="5">5</option>
@@ -50,8 +50,8 @@
           <option value="3">3</option>
           <option value="2">2</option>
         </select>
-      </section>
-      <section class="register-student__form-field subjects-wrapper">
+      </label>
+      <label class="register-student__form-field subjects-wrapper">
         <span class="title subject-title">Geometry and algebra</span>
         <select class="select-value" name="geometry-algebra">
           <option selected value="5">5</option>
@@ -59,8 +59,8 @@
           <option value="3">3</option>
           <option value="2">2</option>
         </select>
-      </section>
-      <section class="register-student__form-field subjects-wrapper">
+      </label>
+      <label class="register-student__form-field subjects-wrapper">
         <span class="title subject-title">Mathematical analysis</span>
         <select class="select-value" name="math-analysis">
           <option selected value="5">5</option>
@@ -68,8 +68,8 @@
           <option value="3">3</option>
           <option value="2">2</option>
         </select>
-      </section>
-      <section class="register-student__form-field subjects-wrapper">
+      </label>
+      <label class="register-student__form-field subjects-wrapper">
         <span class="title subject-title">Physics</span>
         <select class="select-value" name="physics">
           <option selected value="5">5</option>
@@ -77,8 +77,8 @@
           <option value="3">3</option>
           <option value="2">2</option>
         </select>
-      </section>
-      <section class="register-student__form-field subjects-wrapper">
+      </label>
+      <label class="register-student__form-field subjects-wrapper">
         <span class="title subject-title">Computer science</span>
         <select class="select-value" name="computer-science">
           <option selected value="5">5</option>
@@ -86,18 +86,18 @@
           <option value="3">3</option>
           <option value="2">2</option>
         </select>
-      </section>
+      </label>
       <button id="submit-btn" class="register-student__submit-btn" type="submit">Register student</button>
     </form>
-  </section>
+  </d>
 </div>
 
 <button onclick="toggleModalbox()" class="modalbox-open-btn">Show List of students</button>
 
 <div class="modalbox-container">
   <a class="modalbox__background"></a>
-  <section class="modalbox">
-    <section class="modalbox__header">
+  <label class="modalbox">
+    <label class="modalbox__header">
       <select class="open-course-select" name="open-a-course-list" onchange="onCourseChanged()">
         <option selected value="0">Choose a course num</option>
         <option value="1">1</option>
@@ -114,8 +114,8 @@
         </g>
         </svg>
       </button>
-    </section>
-    <section class="modalbox__content">
+    </label>
+    <label class="modalbox__content">
       <table class="table-students" cols="9">
         <caption class="table__title">
           Students studying on the selected course
@@ -139,8 +139,8 @@
         <tbody class="table__body">
         </tbody>
       </table>
-    </section>
-  </section>
+    </label>
+  </label>
 </div>
 
 <script type="text/javascript" src="scripts/DoublyLinkedList.js"></script>
